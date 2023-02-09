@@ -1,9 +1,7 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
-  <router-view/>
+  <main class="min-height-100vh">
+    <router-view />
+  </main>
 </template>
 
 <style lang="scss">
@@ -20,11 +18,15 @@ nav {
 
   a {
     font-weight: bold;
-    color: #2c3e50;
+    color: #2c3e5044;
 
     &.router-link-exact-active {
       color: #42b983;
     }
   }
+}
+
+.min-height-100vh {
+  min-height: 100vh;
 }
 </style>
